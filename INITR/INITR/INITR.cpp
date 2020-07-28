@@ -482,6 +482,158 @@ void rumah() {
 	glVertex3f(-10, 13.0, 3.0);
 	glEnd();
 
+	//bodi
+	//bodi atas
+	glBegin(GL_POLYGON);
+	glColor3f(175/255.0f, 155/255.0f, 255/255.0f);
+	glVertex3f(16, 35.0, 22.0);
+	glVertex3f(16, 35.0, -22.0);
+	glVertex3f(-35, 35.0, -22.0);
+	glVertex3f(-40, 35.0, -15.0);
+	glVertex3f(-40, 35.0, 15.0);
+	glVertex3f(-35, 35.0, 22.0);
+	glEnd();
+	//lantai atas bodi
+	glBegin(GL_POLYGON);
+	glColor3f(0/255.0f, 0/255.0f, 0/255.0f);
+	glVertex3f(16, 36.0, 22.0);
+	glVertex3f(16, 36.0, -22.0);
+	glVertex3f(-35, 36.0, -22.0);
+	glVertex3f(-40, 36.0, -15.0);
+	glVertex3f(-40, 36.0, 15.0);
+	glVertex3f(-35, 36.0, 22.0);
+	glEnd();
+	warna(0, 0,0);
+	kirikanan(30, 1, -40, 35, 15);
+
+	warna(0, 0,0);
+	kirikanan(44, 1, 16, 35, 22);
+	depanbelakang(51, 1, -35, 35, 22);
+	depanbelakang(51, 1, -35, 35, -22);
+	//bodi depan
+	glBegin(GL_POLYGON);
+	glColor3f(270/255.0f, 218/255.0f, 0/255.0f);
+	glVertex3f(16, 35.0, 22.0);
+	glVertex3f(16, 35.0, -22.0);
+	glVertex3f(16, 18.0, -22.0);
+	glVertex3f(16, 13.0, -15.0);
+	glVertex3f(16, 13.0, 15.0);
+	glVertex3f(16, 18.0, 22.0);
+	glVertex3f(16, 35.0, 22.0);
+	glEnd();
+	//depan2
+	glBegin(GL_POLYGON);
+	glColor3f(245/255.0f, 193/255.0f, 0/255.0f);
+	glVertex3f(10, 35.0, 22.0);
+	glVertex3f(10, 35.0, -22.0);
+	glVertex3f(10, 18.0, -22.0);
+	glVertex3f(10, 13.0, -15.0);
+	glVertex3f(10, 13.0, 15.0);
+	glVertex3f(10, 18.0, 22.0);
+	glVertex3f(10, 35.0, 22.0);
+	glEnd();
+	//bawah miring kanan
+	glBegin(GL_POLYGON);
+	glColor3f(240/255.0f, 188/255.0f, 0/255.0f);
+	glVertex3f(10, 18.0, 22.0);
+	glVertex3f(16, 18.0, 22.0);
+	glVertex3f(16, 13.0, 15.0);
+	glVertex3f(10, 13.0, 15.0);
+	glEnd();
+	//bawah miring kiri
+	glBegin(GL_POLYGON);
+	glColor3f(245/255.0f, 193/255.0f, 0/255.0f);
+	glVertex3f(10, 18.0, -22.0);
+	glVertex3f(16, 18.0, -22.0);
+	glVertex3f(16, 13.0, -15.0);
+	glVertex3f(10, 13.0, -15.0);
+	glEnd();
+	//depan kanan kiri
+	warna(265, 213, 0);
+	depanbelakang(6, 17, 10, 18, -22);
+	depanbelakang(6, 17, 10, 18, 22);
+	kirikanan(30, 22, -40, 13, 15);
+
+	//belakang miring
+	glBegin(GL_POLYGON);
+	glColor3f(235/255.0f, 183/255.0f, 0/255.0f);
+	glVertex3f(-40, 35.0, 15.0);
+	glVertex3f(-40, 13.0, 15.0);
+	glVertex3f(-35, 13.0, 22.0);
+	glVertex3f(-35, 35.0, 22.0);
+	glEnd();
+	glBegin(GL_POLYGON);
+	glColor3f(235/255.0f, 183/255.0f, 0/255.0f);
+	glVertex3f(-40, 35.0, -15.0);
+	glVertex3f(-40, 13.0, -15.0);
+	glVertex3f(-35, 13.0, -22.0);
+	glVertex3f(-35, 35.0, -22.0);
+	glEnd();
+
+	//belakang2
+	glBegin(GL_POLYGON);
+	glColor3f(245/255.0f, 193/255.0f, 0/255.0f);
+	glVertex3f(-28.2, 35.0, 22.0);
+	glVertex3f(-28.2, 13.0, 22.0);
+	glVertex3f(-28.2, 13.0, -22.0);
+	glVertex3f(-28.2, 35.0, -22.0);
+	glEnd();
+	//belakang bawah
+	glBegin(GL_POLYGON);
+	glColor3f(145/255.0f, 93/255.0f, 0/255.0f);
+	glVertex3f(-28.2, 13.1, 22.0);
+	glVertex3f(-35, 13.1, 22.0);
+	glVertex3f(-40, 13.1, 15.0);
+	glVertex3f(-40, 13.1, -15.0);
+	glVertex3f(-35, 13.1, -22.0);
+	glVertex3f(-28.2, 13.1, -22.0);
+	glEnd();
+
+	//bodi belakang
+	warna(265, 213, 0);
+	depanbelakang(7, 22, -35, 13, 22);
+	depanbelakang(7, 22, -35, 13, -22);
+
+	//bodi tengah
+	//depan belakang
+	warna(265, 213, 0);
+	kirikanan(44,17,9.9,18,22);
+	kirikanan(44,17,-28,18,22);
+	kirikanan(32,5,9.9,13,16);
+	kirikanan(32, 5, -28, 13, 16);
+	//kanan kiri
+	warna(265, 213, 0);
+	depanbelakang(38, 17, -28, 18, 22);
+	depanbelakang(38, 17, -28, 18, -22);
+	warna(205, 153, 0);
+	atasbawah(38, 6.8, -28, 18, 22);
+	atasbawah(38, 6.8, -28, 18, -16);
+	warna(225, 173, 0);
+	depanbelakang(38, 5, -28, 13, 16);
+	depanbelakang(38, 5, -28, 13, -16);
+	warna(56, 60, 66);
+	atasbawah(38, 32, -28, 13, 16);
+
+	//ruang kendali
+	depanbelakang(2,12,13,35,22);
+	depanbelakang(2,12,-2,35,22);
+	depanbelakang(2,12,-2,35,7);
+	depanbelakang(2,12,13,35,7);
+	depanbelakang(15,3,-2,35,22);
+	depanbelakang(15,3,-2,35,7);
+	depanbelakang(15,3,-2,44,22);
+	depanbelakang(15,3,-2,44,7);
+	kirikanan(2,12,15,35,22);
+	kirikanan(2,12,-2,35,22);
+	kirikanan(2,12,-2,35,9);
+	kirikanan(2,12,15,35,9);
+	kirikanan(15,3,15,35,22);
+	kirikanan(15,3,-2,35,22);
+	kirikanan(15,3,-2,44,22);
+	kirikanan(15,3,15,44,22);
+	warna(0,0,0);
+	atasbawah(17,15,-2,47,22);
+
 }
 
 void tampil() {
