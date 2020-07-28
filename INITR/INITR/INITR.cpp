@@ -164,7 +164,7 @@ void shovel() {
 	//rantai kanan
 	//kanan
 	glBegin(GL_POLYGON);
-	glColor3f(255/255.0f, 255/255.0f, 255/255.0f);
+	glColor3f(251/255.0f, 218/255.0f, 0/255.0f);
 	glVertex3f(26.0, 0.0, 25.0);
 	glVertex3f(28.0, 1.0, 25.0);
 	glVertex3f(30.0, 4.0, 25.0);
@@ -180,7 +180,7 @@ void shovel() {
 	glEnd();
 	//kiri
 	glBegin(GL_POLYGON);
-	glColor3f(255/255.0f, 255/255.0f, 255/255.0f);
+	glColor3f(221/255.0f, 198/255.0f, 0/255.0f);
 	glVertex3f(26.0, 0.0, 15.0);
 	glVertex3f(28.0, 1.0, 15.0);
 	glVertex3f(30.0, 4.0, 15.0);
@@ -294,7 +294,7 @@ void shovel() {
 	//rantai kiri
 	//kiri
 	glBegin(GL_POLYGON);
-	glColor3f(255/255.0f, 255/255.0f, 255/255.0f);
+	glColor3f(251/255.0f, 218/255.0f, 0/255.0f);
 	glVertex3f(26.0, 0.0, -25.0);
 	glVertex3f(28.0, 1.0, -25.0);
 	glVertex3f(30.0, 4.0, -25.0);
@@ -310,7 +310,7 @@ void shovel() {
 	glEnd();
 	//kanan
 	glBegin(GL_POLYGON);
-	glColor3f(255/255.0f, 255/255.0f, 255/255.0f);
+	glColor3f(221/255.0f, 198/255.0f, 0/255.0f);
 	glVertex3f(26.0, 0.0, -15.0);
 	glVertex3f(28.0, 1.0, -15.0);
 	glVertex3f(30.0, 4.0, -15.0);
@@ -2003,6 +2003,67 @@ void shovel() {
 	glVertex3f(-69, 1,-62);
 	glVertex3f(-71, 0,-62);
 	glVertex3f(-73, 0,-62);
+	glEnd();
+
+	//katrolnya
+	glBegin(GL_POLYGON);
+	warna(231, 199, 0);
+	glVertex3f(75, 56, 4);
+	glVertex3f(75, 59, 4);
+	glVertex3f(78, 62, 4);
+	glVertex3f(81, 62, 4);
+	glVertex3f(84, 59, 4);
+	glVertex3f(84, 56, 4);
+	glVertex3f(81, 53, 4);
+	glVertex3f(78, 53, 4);
+	glEnd();	
+	glBegin(GL_POLYGON);
+	warna(0, 0, 0);
+	glVertex3f(78, 56, 4.1);
+	glVertex3f(78, 59, 4.1);
+	glVertex3f(81, 59, 4.1);
+	glVertex3f(81, 56, 4.1);
+	glEnd();	
+	glBegin(GL_POLYGON);
+	warna(231, 199, 0);
+	glVertex3f(75, 56, -4);
+	glVertex3f(75, 59, -4);
+	glVertex3f(78, 62, -4);
+	glVertex3f(81, 62, -4);
+	glVertex3f(84, 59, -4);
+	glVertex3f(84, 56, -4);
+	glVertex3f(81, 53, -4);
+	glVertex3f(78, 53, -4);
+	glEnd();	
+	glBegin(GL_POLYGON);
+	warna(0, 0, 0);
+	glVertex3f(78, 56, -4.1);
+	glVertex3f(78, 59, -4.1);
+	glVertex3f(81, 59, -4.1);
+	glVertex3f(81, 56, -4.1);
+	glEnd();	
+
+	//tali katrol
+	glBegin(GL_LINES);
+	warna(0,0,0);
+	glVertex3f(84, 56, -4.1);
+	glVertex3f(67, 18, -4.1);
+	glEnd();
+	glBegin(GL_LINES);
+	warna(0,0,0);
+	glVertex3f(84, 56, 4.1);
+	glVertex3f(67, 18, 4.1);
+	glEnd();
+
+	glBegin(GL_LINES);
+	warna(0,0,0);
+	glVertex3f(78, 62, -4.1);
+	glVertex3f(-10, 55, -2.1);
+	glEnd();
+	glBegin(GL_LINES);
+	warna(0,0,0);
+	glVertex3f(78, 62, 4.1);
+	glVertex3f(-10, 55, 2.1);
 	glEnd();
 }
 
