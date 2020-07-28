@@ -1867,6 +1867,143 @@ void shovel() {
 	kirikanan(2, 10, -50, 70, -176);
 	kirikanan(2, 10, -30, 70, -158);
 	kirikanan(2, 10, -30, 70, -176);
+
+	//kereta
+	warna(62, 62, 71);
+	atasbawah(36, 10, -143, 2, -52);
+	atasbawah(36, 10, -143, 3, -52);
+	depanbelakang(36, 1, -143, 2, -52);
+	depanbelakang(36, 1, -143, 2, -62);
+	kirikanan(10, 1, -143, 2, -52);
+	kirikanan(10, 1, -123, 2, -52);
+
+	atasbawah(6, 2, -109, 2, -57);
+
+	atasbawah(36, 10, -103, 2, -52);
+	atasbawah(36, 10, -103, 3, -52);
+	depanbelakang(36, 1, -103, 2, -52);
+	depanbelakang(36, 1, -103, 2, -62);
+	kirikanan(10, 1, -103, 2, -52);
+	kirikanan(10, 1, -83, 2, -52);
+
+	warna(52, 46, 55);
+	depanbelakang(10, 5, -142, 3, -53);
+	depanbelakang(10, 5, -142, 3, -61);
+	depanbelakang(10, 5, -130, 3, -53);
+	depanbelakang(10, 5, -130, 3, -61);
+	depanbelakang(10, 5, -118, 3, -53);
+	depanbelakang(10, 5, -118, 3, -61);
+
+	depanbelakang(10, 5, -102, 3, -53);
+	depanbelakang(10, 5, -102, 3, -61);
+	depanbelakang(10, 5, -90, 3, -53);
+	depanbelakang(10, 5, -90, 3, -61);
+	depanbelakang(10, 5, -78, 3, -53);
+	depanbelakang(10, 5, -78, 3, -61);
+
+	kirikanan(8, 5, -142, 3, -53);
+	kirikanan(8, 5, -132, 3, -53);
+	kirikanan(8, 5, -130, 3, -53);
+	kirikanan(8, 5, -120, 3, -53);
+	kirikanan(8, 5, -118, 3, -53);
+	kirikanan(8, 5, -108, 3, -53);
+
+	kirikanan(8, 5, -102, 3, -53);
+	kirikanan(8, 5, -92, 3, -53);
+	kirikanan(8, 5, -90, 3, -53);
+	kirikanan(8, 5, -80, 3, -53);
+	kirikanan(8, 5, -78, 3, -53);
+	kirikanan(8, 5, -68, 3, -53);
+	//roda kereta kanan
+	glBegin(GL_POLYGON);
+	warna(4, 4, 2);
+	glVertex3f(-140, 1,-52);
+	glVertex3f(-140, 4,-52);
+	glVertex3f(-138, 5,-52);
+	glVertex3f(-136, 5,-52);
+	glVertex3f(-134, 4,-52);
+	glVertex3f(-134, 1,-52);
+	glVertex3f(-136, 0,-52);
+	glVertex3f(-138, 0,-52);
+	glEnd();
+
+	glBegin(GL_POLYGON);
+	glVertex3f(-116, 1,-52);
+	glVertex3f(-116, 4,-52);
+	glVertex3f(-114, 5,-52);
+	glVertex3f(-112, 5,-52);
+	glVertex3f(-110, 4,-52);
+	glVertex3f(-110, 1,-52);
+	glVertex3f(-112, 0,-52);
+	glVertex3f(-114, 0,-52);
+	glEnd();
+
+	glBegin(GL_POLYGON);
+	glVertex3f(-94, 1,-52);
+	glVertex3f(-94, 4,-52);
+	glVertex3f(-96, 5,-52);
+	glVertex3f(-98, 5,-52);
+	glVertex3f(-100, 4,-52);
+	glVertex3f(-100, 1,-52);
+	glVertex3f(-98, 0,-52);
+	glVertex3f(-96, 0,-52);
+	glEnd();
+
+	glBegin(GL_POLYGON);
+	glVertex3f(-75, 1,-52);
+	glVertex3f(-75, 4,-52);
+	glVertex3f(-73, 5,-52);
+	glVertex3f(-71, 5,-52);
+	glVertex3f(-69, 4,-52);
+	glVertex3f(-69, 1,-52);
+	glVertex3f(-71, 0,-52);
+	glVertex3f(-73, 0,-52);
+	glEnd();
+	//roda kereta kiri
+	glBegin(GL_POLYGON);
+	warna(4, 4, 2);
+	glVertex3f(-140, 1,-62);
+	glVertex3f(-140, 4,-62);
+	glVertex3f(-138, 5,-62);
+	glVertex3f(-136, 5,-62);
+	glVertex3f(-134, 4,-62);
+	glVertex3f(-134, 1,-62);
+	glVertex3f(-136, 0,-62);
+	glVertex3f(-138, 0,-62);
+	glEnd();
+	
+	glBegin(GL_POLYGON);
+	glVertex3f(-116, 1,-62);
+	glVertex3f(-116, 4,-62);
+	glVertex3f(-114, 5,-62);
+	glVertex3f(-112, 5,-62);
+	glVertex3f(-110, 4,-62);
+	glVertex3f(-110, 1,-62);
+	glVertex3f(-112, 0,-62);
+	glVertex3f(-114, 0,-62);
+	glEnd();
+
+	glBegin(GL_POLYGON);
+	glVertex3f(-94, 1,-62);
+	glVertex3f(-94, 4,-62);
+	glVertex3f(-96, 5,-62);
+	glVertex3f(-98, 5,-62);
+	glVertex3f(-100, 4,-62);
+	glVertex3f(-100, 1,-62);
+	glVertex3f(-98, 0,-62);
+	glVertex3f(-96, 0,-62);
+	glEnd();
+
+	glBegin(GL_POLYGON);
+	glVertex3f(-75, 1,-62);
+	glVertex3f(-75, 4,-62);
+	glVertex3f(-73, 5,-62);
+	glVertex3f(-71, 5,-62);
+	glVertex3f(-69, 4,-62);
+	glVertex3f(-69, 1,-62);
+	glVertex3f(-71, 0,-62);
+	glVertex3f(-73, 0,-62);
+	glEnd();
 }
 
 void tampil() {
