@@ -108,7 +108,7 @@ void atasbawah(int panjang = 1, int lebar = 1, int p_x = 0, int p_y = 0, int p_z
     glEnd();
 }
 
-void rumah() {
+void shovel() {
 	//tanah
 	warna(125,82,26);
 	atasbawah(300,300,-150,0,100);
@@ -1553,6 +1553,192 @@ void rumah() {
 	glVertex3f(150, 22, -15);
 	glEnd();
 
+	//conveyor
+		//alas
+	warna(130, 130, 130);
+	atasbawah(10,50,57,13,80);
+		//selimut
+	warna(255, 0, 0);
+	depanbelakang(10,5,57,13,80);
+	kirikanan(50,5,67,13,80);
+	kirikanan(50,5,68,13,80);
+	atasbawah(1,50,67,13,80);
+	atasbawah(1,50,67,18,80);
+	kirikanan(40,5,57,13,70);
+	kirikanan(40,5,56,13,70);
+	atasbawah(1,40,56,13,70);
+	atasbawah(1,40,56,18,70);
+	kirikanan(50,5,-130,60,80);
+	kirikanan(40,5,-120,60,70);
+		//kaki
+	warna(255, 204, 0);
+	depanbelakang(1,13,57,0,80);
+	depanbelakang(1,13,57,0,79);
+	kirikanan(1,13,57,0,80);
+	kirikanan(1,13,58,0,80);
+	depanbelakang(1,13,67,0,80);
+	depanbelakang(1,13,67,0,79);
+	kirikanan(1,13,67,0,80);
+	kirikanan(1,13,68,0,80);
+		warna(255, 204, 0);
+	depanbelakang(1,13,57,0,31);
+	depanbelakang(1,13,57,0,30);
+	kirikanan(1,13,57,0,31);
+	kirikanan(1,13,58,0,31);
+	depanbelakang(1,13,67,0,31);
+	depanbelakang(1,13,67,0,30);
+	kirikanan(1,13,67,0,31);
+	kirikanan(1,13,68,0,31);
+		warna(255, 204, 0);
+	depanbelakang(1,13,57,0,50);
+	depanbelakang(1,13,57,0,49);
+	kirikanan(1,13,57,0,50);
+	kirikanan(1,13,58,0,50);
+	depanbelakang(1,13,67,0,50);
+	depanbelakang(1,13,67,0,49);
+	kirikanan(1,13,67,0,50);
+	kirikanan(1,13,68,0,50);
+	warna(255, 204, 0);
+	depanbelakang(1,13,57,0,65);
+	depanbelakang(1,13,57,0,64);
+	kirikanan(1,13,57,0,65);
+	kirikanan(1,13,58,0,65);
+	depanbelakang(1,13,67,0,65);
+	depanbelakang(1,13,67,0,64);
+	kirikanan(1,13,67,0,65);
+	kirikanan(1,13,68,0,65);
+
+	depanbelakang(1,60,-130,0,31);
+	depanbelakang(1,60,-130,0,30);
+	kirikanan(1,60,-130,0,31);
+	kirikanan(1,60,-129,0,31);
+	depanbelakang(1,60,-121,0,31);
+	depanbelakang(1,60,-121,0,30);
+	kirikanan(1,60,-121,0,31);
+	kirikanan(1,60,-120,0,31);
+
+	glBegin(GL_POLYGON);
+	warna(130, 130, 130);
+	glVertex3f(57,13,80);
+	glVertex3f(57,13,70);
+	glVertex3f(-80,60,70);
+	glVertex3f(-80,60,80);
+	glEnd();
+	glBegin(GL_POLYGON);
+	warna(255, 0, 0);
+	glVertex3f(57,13,80);
+	glVertex3f(-80,60,80);
+	glVertex3f(-80,65,80);
+	glVertex3f(57,18,80);
+	glEnd();
+	glBegin(GL_POLYGON);
+	warna(255, 0, 0);
+	glVertex3f(57,13,70);
+	glVertex3f(-80,60,70);
+	glVertex3f(-80,65,70);
+	glVertex3f(57,18,70);
+	glEnd();
+
+	warna(130, 130, 130);
+	atasbawah(50,10,-130,60,80);
+	atasbawah(10,50,-130,60,80);
+	warna(255, 0, 0);
+	depanbelakang(50,5,-130,60,80);
+	depanbelakang(40,5,-120,60,70);
+	//kaki
+	warna(255, 204, 0);
+	depanbelakang(1,32,0,0,80);
+	depanbelakang(1,32,0,0,79);
+	kirikanan(1,32,0,0,80);
+	kirikanan(1,32,1,0,80);
+	depanbelakang(1,32,0,0,71);
+	depanbelakang(1,32,0,0,70);
+	kirikanan(1,32,0,0,71);
+	kirikanan(1,32,1,0,71);
+	depanbelakang(1,59,-80,0,80);
+	depanbelakang(1,59,-80,0,79);
+	kirikanan(1,59,-80,0,80);
+	kirikanan(1,59,-79,0,80);
+	depanbelakang(1,59,-80,0,71);
+	depanbelakang(1,59,-80,0,70);
+	kirikanan(1,59,-80,0,71);
+	kirikanan(1,59,-79,0,71);
+
+	depanbelakang(1,60,-130,0,80);
+	depanbelakang(1,60,-130,0,79);
+	kirikanan(1,60,-130,0,80);
+	kirikanan(1,60,-129,0,80);
+	depanbelakang(1,60,-130,0,71);
+	depanbelakang(1,60,-130,0,70);
+	kirikanan(1,60,-130,0,71);
+	kirikanan(1,60,-129,0,71);
+
+	//gunungbatubara
+	glBegin(GL_POLYGON);
+	warna(0, 0, 0);
+	glVertex3f(-100,0,20);
+	glVertex3f(-150,0,20);
+	glVertex3f(-120,60,-10);
+	glEnd();
+	glBegin(GL_POLYGON);
+	warna(0, 0, 0);
+	glVertex3f(-100,0,-30);
+	glVertex3f(-150,0,-30);
+	glVertex3f(-120,60,-10);
+	glEnd();
+	glBegin(GL_POLYGON);
+	warna(0, 0, 0);
+	glVertex3f(-100,0,20);
+	glVertex3f(-100,0,-30);
+	glVertex3f(-120,60,-10);
+	glEnd();
+	glBegin(GL_POLYGON);
+	warna(0, 0, 0);
+	glVertex3f(-150,0,-30);
+	glVertex3f(-150,0,20);
+	glVertex3f(-120,60,-10);
+	glEnd();
+
+	//kantor
+	warna(189, 190, 191);
+	depanbelakang(50,30,20,0,-100);
+	depanbelakang(50,30,20,0,-150);
+	kirikanan(50,30,20,0,-100);
+	kirikanan(50,30,70,0,-100);
+	//pintu
+	warna(255, 132, 18);
+	depanbelakang(15,20,30,0,-99.9);
+	warna(0,0,0);
+	depanbelakang(1,1,40,8,-99.8);
+	//atap
+	glBegin(GL_POLYGON);
+	warna(201, 87, 0);
+	glVertex3f(20,30,-100);
+	glVertex3f(70,30,-100);
+	glVertex3f(45,45,-100);
+	glEnd();
+	glBegin(GL_POLYGON);
+	warna(201, 87, 0);
+	glVertex3f(20,30,-150);
+	glVertex3f(70,30,-150);
+	glVertex3f(45,45,-150);
+	glEnd();
+	glBegin(GL_POLYGON);
+	warna(196, 113, 49);
+	glVertex3f(20,30,-100);
+	glVertex3f(20,30,-150);
+	glVertex3f(45,45,-150);
+	glVertex3f(45,45,-100);
+	glEnd();
+	glBegin(GL_POLYGON);
+	warna(199, 122, 62);
+	glVertex3f(70,30,-100);
+	glVertex3f(70,30,-150);
+	glVertex3f(45,45,-150);
+	glVertex3f(45,45,-100);
+	glEnd();
+
+
 }
 
 void tampil() {
@@ -1574,7 +1760,7 @@ void tampil() {
         gluLookAt(-45, 15, 150, 0, 0, 0, 0, 1, 0);
         glRotatef(xrot, 1, 0, 0);
         glRotatef(yrot, 0, 1, 0);
-        rumah();
+        shovel();
 		
     glPopMatrix();
 
