@@ -1738,7 +1738,135 @@ void shovel() {
 	glVertex3f(45,45,-100);
 	glEnd();
 
+	//tower kereta gantung
+	warna(1,1,1);
+	atasbawah(40, 60, -145, 90, -130);
+	atasbawah(40, 60, -145, 86, -130);
+	kirikanan(60, 4, -145, 86, -130);
+	kirikanan(60, 4, -105, 86, -130);
+	depanbelakang(40, 4, -145, 86, -130);
+	depanbelakang(40, 4, -145, 86, -190);
 
+	//tiang2
+	kirikanan(5, 86, -135, 0, -140);
+	kirikanan(5, 86, -135, 0, -180);
+	kirikanan(5, 86, -115, 0, -140);
+	kirikanan(5, 86, -115, 0, -180);
+
+	kirikanan(5, 86, -140, 0, -140);
+	kirikanan(5, 86, -140, 0, -180);
+	kirikanan(5, 86, -110, 0, -140);
+	kirikanan(5, 86, -110, 0, -180);
+
+	depanbelakang(5, 86, -140, 0, -140);
+	depanbelakang(5, 86, -140, 0, -145);
+	depanbelakang(5, 86, -140, 0, -180);
+	depanbelakang(5, 86, -140, 0, -185);
+
+	depanbelakang(5, 86, -115, 0, -140);
+	depanbelakang(5, 86, -115, 0, -145);
+	depanbelakang(5, 86, -115, 0, -180);
+	depanbelakang(5, 86, -115, 0, -185);
+
+	//cagak kereta atas
+	warna(255,0,0);
+	kirikanan(3, 30, -135, 90,-158); 
+	kirikanan(3, 30, -132, 90,-158); 
+	depanbelakang(3, 30, -135, 90, -158);
+	depanbelakang(3, 30, -135, 90, -161);
+	kirikanan(20, 3, -135, 120,-150);
+	kirikanan(20, 3, -132, 120,-150);
+	depanbelakang(3, 3,-135, 120,-150);
+	depanbelakang(3, 3, -135, 120,-170);
+	atasbawah(3, 20, -135, 123,-150);
+
+	//cagak kereta bawah
+	warna(255,0,0);
+	kirikanan(3, 20, 135, 3,-158); 
+	kirikanan(3, 20, 137, 3,-158); 
+	depanbelakang(3, 20, 135, 3, -158);
+	depanbelakang(3, 20, 135, 3, -161);
+	kirikanan(20, 3, 135, 23,-150);
+	kirikanan(20, 3, 137, 23,-150);
+	depanbelakang(3, 3,135, 23,-150);
+	depanbelakang(3, 3, 135, 23,-170);
+	atasbawah(3, 20, 135, 23,-150);
+
+	//alas cagak kereta bawah
+	warna(0,0,0);
+	atasbawah(40, 50, 100, 3, -130);
+	depanbelakang(40, 3, 100, 0, -130);
+	depanbelakang(40, 3, 100, 0, -180);
+	kirikanan(50, 3, 100, 0, -130);
+	kirikanan(50, 3, 140, 0, -130);
+
+	//tali
+	glBegin(GL_LINES);
+	glLineWidth(2.0);
+	warna(0,0,0);
+	glVertex3f(-132, 123, -155);
+	glVertex3f(135, 26, -155);
+	glEnd();
+	glBegin(GL_LINES);
+	glLineWidth(2.0);
+	warna(0,0,0);
+	glVertex3f(-132, 123, -165);
+	glVertex3f(135, 26, -165);
+	glEnd();
+
+	//tulang kereta gantung
+	glBegin(GL_POLYGON);
+	warna(0,0,0);
+	glVertex3f(-45, 91,-167);
+	glVertex3f(-40, 90,-167);
+	glVertex3f(-40, 90,-153);
+	glVertex3f(-45, 91,-153);
+	glEnd();	
+
+	glBegin(GL_POLYGON);
+	glVertex3f(-44, 91.5,-165);
+	glVertex3f(-44, 91.5,-162);
+	glVertex3f(-44, 80,-162);
+	glVertex3f(-44, 80,-165);
+	glEnd();	
+	glBegin(GL_POLYGON);
+	glVertex3f(-42, 91,-165);
+	glVertex3f(-42, 91,-162);
+	glVertex3f(-42, 80,-162);
+	glVertex3f(-42, 80,-165);
+	glEnd();	
+	glBegin(GL_POLYGON);
+	glVertex3f(-44, 91.5,-165);
+	glVertex3f(-42, 91.5,-165);
+	glVertex3f(-42, 80,-165);
+	glVertex3f(-44, 80,-165);
+	glEnd();	
+	glBegin(GL_POLYGON);
+	glVertex3f(-44, 91.5,-162);
+	glVertex3f(-42, 91.5,-162);
+	glVertex3f(-42, 80,-162);
+	glVertex3f(-44, 80,-162);
+	glEnd();	
+
+	//kereta gantung
+	warna(24,164,225);
+	atasbawah(20,20, -50, 80, -158);
+	kirikanan(20, 10, -50, 60, -158);
+	kirikanan(20, 10, -30, 60, -158);
+
+	depanbelakang(2, 10, -50, 70, -158);
+	depanbelakang(2, 10, -50, 70, -178);
+	depanbelakang(2, 10, -32, 70, -158);
+	depanbelakang(2, 10, -32, 70, -178);
+	warna(32,156,218);
+	depanbelakang(20,10, -50, 60, -158);
+	depanbelakang(20,10, -50, 60, -178);
+	warna(4,51,83);
+	atasbawah(20,20, -50, 60, -158);
+	kirikanan(2, 10, -50, 70, -158);
+	kirikanan(2, 10, -50, 70, -176);
+	kirikanan(2, 10, -30, 70, -158);
+	kirikanan(2, 10, -30, 70, -176);
 }
 
 void tampil() {
